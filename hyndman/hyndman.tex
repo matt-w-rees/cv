@@ -1,0 +1,401 @@
+%% Template for a CV
+%% Author: Rob J Hyndman
+
+\documentclass[10pt,a4paper,]{article}
+\usepackage[scaled=0.86]{DejaVuSansMono}
+\usepackage[sfdefault,lf,t]{carlito}
+
+% Change color to blue
+\usepackage{color,xcolor}
+\definecolor{headcolor}{HTML}{990000}
+
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\PassOptionsToPackage{hyphens}{url} % url is loaded by hyperref
+\usepackage[unicode=true,hidelinks]{hyperref}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{geometry}
+\geometry{left=1.75cm,right=1.75cm,top=2.2cm,bottom=2cm}
+
+\usepackage{longtable,booktabs}
+% Fix footnotes in tables (requires footnote package)
+\IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{long table}}{}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+
+\date{August 2020}
+
+%%%% BIBLIOGRAPHY
+% Bibliography formatting
+
+\usepackage[sorting=ynt,citestyle=authoryear,bibstyle=authoryear-comp,defernumbers=true,maxnames=20,giveninits=true, bibencoding=utf8, terseinits=true, uniquename=init,dashed=false,doi=false,isbn=false,natbib=true,backend=biber]{biblatex}
+
+\DeclareFieldFormat{url}{\url{#1}}
+\DeclareFieldFormat[article]{pages}{#1}
+\DeclareFieldFormat[inproceedings]{pages}{\lowercase{pp.}#1}
+\DeclareFieldFormat[incollection]{pages}{\lowercase{pp.}#1}
+\DeclareFieldFormat[article]{volume}{\mkbibbold{#1}}
+\DeclareFieldFormat[article]{number}{\mkbibparens{#1}}
+\DeclareFieldFormat[article]{title}{\MakeCapital{#1}}
+\DeclareFieldFormat[article]{url}{}
+\DeclareFieldFormat[inproceedings]{title}{#1}
+\DeclareFieldFormat{shorthandwidth}{#1}
+\DeclareFieldFormat{extradate}{}
+
+% No dot before number of articles
+\usepackage{xpatch}
+\xpatchbibmacro{volume+number+eid}{\setunit*{\adddot}}{}{}{}
+
+% Remove In: for an article.
+\renewbibmacro{in:}{%
+  \ifentrytype{article}{}{%
+  \printtext{\bibstring{in}\intitlepunct}}}
+
+%\makeatletter
+%\DeclareDelimFormat[cbx@textcite]{nameyeardelim}{\addspace}
+%\makeatother
+
+\setlength{\bibitemsep}{1.8pt}
+\setlength{\bibhang}{.9cm}
+%\renewcommand{\bibfont}{\fontsize{12}{14}}
+
+\renewcommand*{\bibitem}{\addtocounter{papers}{1}\item \mbox{}\hskip-0.9cm\hbox to 0.9cm{\hfill\arabic{papers}.~\,}}
+\defbibenvironment{bibliography}
+{\list{}
+  {\setlength{\leftmargin}{\bibhang}%
+   \setlength{\itemsep}{\bibitemsep}%
+   \setlength{\parsep}{\bibparsep}}}
+{\endlist}
+{\bibitem}
+
+\renewcommand{\bibfont}{\normalfont\fontsize{10}{12.4}\selectfont}
+% Counters for keeping track of papers
+\newcounter{papers}
+
+\DeclareSortingTemplate{ty}{
+  \sort{
+    \field{title}
+  }
+  \sort{
+    \field{year}
+  }
+}
+\DeclareBibliographyCategory{bib-/Users/mrees2/Dropbox/personal/matt/github/cv/hyndman/Rees.bib-3378569}
+\bibliography{/Users/mrees2/Dropbox/personal/matt/github/cv/hyndman/Rees.bib}
+
+\usepackage{paralist,ragged2e,datetime}
+\usepackage[hyphens]{url}
+\usepackage{fancyhdr,enumitem,pifont}
+\usepackage[compact,small,sf,bf]{titlesec}
+
+\RaggedRight
+\sloppy
+
+% Header and footer
+\pagestyle{fancy}
+\makeatletter
+\lhead{\sf\textcolor[gray]{0.4}{Curriculum Vitae: \@name}}
+\rhead{\sf\textcolor[gray]{0.4}{\thepage}}
+\cfoot{}
+\def\headrule{{\color[gray]{0.4}\hrule\@height\headrulewidth\@width\headwidth \vskip-\headrulewidth}}
+\makeatother
+
+% Header box
+\usepackage{tabularx}
+
+\makeatletter
+\def\name#1{\def\@name{#1}}
+\def\info#1{\def\@info{#1}}
+\makeatother
+\newcommand{\shadebox}[3][.9]{\fcolorbox[gray]{0}{#1}{\parbox{#2}{#3}}}
+
+\usepackage{calc}
+\newlength{\headerboxwidth}
+\setlength{\headerboxwidth}{\textwidth}
+%\addtolength{\headerboxwidth}{0.2cm}
+\makeatletter
+\def\maketitle{
+\thispagestyle{plain}
+\vspace*{-1.4cm}
+\shadebox[0.9]{\headerboxwidth}{\sf\color{headcolor}\hfil
+\hbox to 0.98\textwidth{\begin{tabular}{l}
+\\[-0.3cm]
+\LARGE\textbf{\@name}
+\\[0.1cm]\large Applied Ecologist\\[0.6cm]
+\normalsize\textbf{Curriculum Vitae}\\
+\normalsize August 2020
+\end{tabular}
+\hfill\hbox{\fontsize{9}{12}\sf
+\begin{tabular}{@{}rl@{}}
+\@info
+\end{tabular}}}\hfil
+}
+\vspace*{0.2cm}}
+\makeatother
+
+% Section headings
+\titlelabel{}
+\titlespacing{\section}{0pt}{1.5ex}{0.5ex}
+\titleformat*{\section}{\color{headcolor}\large\sf\bfseries}
+\titleformat*{\subsection}{\color{headcolor}\sf\bfseries}
+\titlespacing{\subsection}{0pt}{1ex}{0.5ex}
+
+% Miscellaneous dimensions
+\setlength{\parskip}{0ex}
+\setlength{\parindent}{0em}
+\setlength{\headheight}{15pt}
+\setlength{\tabcolsep}{0.15cm}
+\clubpenalty = 10000
+\widowpenalty = 10000
+\setlist{itemsep=1pt}
+\setdescription{labelwidth=1.2cm,leftmargin=1.5cm,labelindent=1.5cm,font=\rm}
+
+% Make nicer bullets
+\renewcommand{\labelitemi}{\ding{228}}
+
+\usepackage{booktabs,fontawesome}
+%\usepackage[t1,scale=0.86]{sourcecodepro}
+
+\name{Matthew Rees}
+\def\imagetop#1{\vtop{\null\hbox{#1}}}
+\info{%
+\raisebox{-0.05cm}{\imagetop{\faicon{map-marker}}} &  \imagetop{\begin{tabular}{@{}l@{}}School of Biosciences, University of Melbourne\end{tabular}}\\ %
+\faicon{home} & \href{http://matthewreesearch.com}{matthewreesearch.com}\\% %
+\faicon{phone} & +61 412 560 534\\%
+\faicon{envelope} & \href{mailto:matt.wayne.rees@gmail.com}{\nolinkurl{matt.wayne.rees@gmail.com}}\\%
+\faicon{twitter} & \href{https://twitter.com/matt\_w\_rees}{@matt\_w\_rees}\\%
+\faicon{github} & \href{https://github.com/matt-w-rees}{matt-w-rees}\\%
+\faicon{linkedin} & \href{https://www.linkedin.com/in/matthew-w-rees}{matthew-w-rees}\\%
+%
+%
+}
+
+
+%\usepackage{inconsolata}
+
+
+
+% Templates for detailed entries
+% Arguments: what when with where why
+\usepackage{etoolbox}
+
+% Templates for detailed entries
+% Arguments: what when with where why
+\def\detaileditem#1#2#3#4#5{
+#2 & \parbox[t]{0.85\textwidth}{%
+      \textbf{#1}\hfill{\footnotesize #3}\\
+      \ifx#4\empty\else#4\par\fi%
+      \ifx#5\empty\else{%
+        \vspace{0.1cm}\begin{minipage}{0.7\textwidth}%
+        \begin{itemize}#5\end{itemize}%
+        \end{minipage}}\fi%
+      \vspace{\parsep}}\\}
+%\def\detailedsection#1{\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}#1\end{tabular*}}
+\setlength\LTleft{0pt}
+\setlength\LTright{0pt}
+\def\detailedsection#1{\begin{longtable}{@{\extracolsep{\fill}}ll}#1\end{longtable}}
+
+% Templates for brief entries
+% Arguments: what when with
+\def\briefitem#1#2#3{
+#2 & \parbox[t]{0.85\textwidth}{%
+      \textbf{#1}\\[-0.1cm]{\footnotesize #3}}\\[0.4cm]}
+%\def\briefsection#1{\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}#1\end{tabular*}}
+\def\briefsection#1{\begin{longtable}{@{\extracolsep{\fill}}ll}#1\end{longtable}}
+
+\def\endfirstpage{\newpage}
+
+\begin{document}
+\maketitle
+
+
+\hypertarget{about-me}{%
+\section{About me}\label{about-me}}
+
+I conduct research on predator ecology, invasive animal management and native mammal conservation. To do so, I use quantitative methods which incorporate uncertainty and socio-economic constraints to improve management and decision-making. In particular, my strengths lie in statistical models which estimate animal density, occupancy, spatio-temporal interactions and the integration of different data sources. I'm also passionate about collaborative, open science that incorporates the knowledge and needs of First Nations people. I am currently finishing up my PhD with the \href{https://qaeco.com}{QAECO} lab on the impact of fox control in south-west Victoria, while tackling the occasional, related contracting job.
+
+\hypertarget{education}{%
+\section{Education}\label{education}}
+
+\detailedsection{\detaileditem{PhD (Conservation Biology)}{2017-present}{ University of Melbourne}{Melbourne, Australia}{\empty}\detaileditem{Bachelor of Environmental Science (1st class Honours)}{2013-2016}{Queensland University of Technology}{Brisbane, Australia}{\empty}}
+
+\hypertarget{professional-experience}{%
+\section{Professional Experience}\label{professional-experience}}
+
+\begin{tabular}{ll}
+  2020--2020 & \textbf{Research assistant}, University of Melbourne, Designing fox density surveys for DELWP knowledge acquisition grant. \\ 
+  2019--2020 & \textbf{Ecologist}, Winda-mara Aboriginal Corporation, training Indigenous rangers in fauna monitoring protocols. \\ 
+  2018--2020 & \textbf{Demonstrator}, University of Melbourne, Conservation Biology, Environmental Risk Assessment subjects. \\ 
+  \end{tabular}
+
+\hypertarget{publications}{%
+\section{Publications}\label{publications}}
+
+\hypertarget{peer-reviewed}{%
+\subsubsection{Peer-reviewed}\label{peer-reviewed}}
+
+\defbibheading{bib-/Users/mrees2/Dropbox/personal/matt/github/cv/hyndman/Rees.bib-3378569}{}
+\addtocategory{bib-/Users/mrees2/Dropbox/personal/matt/github/cv/hyndman/Rees.bib-3378569}{1,
+2}
+\newrefcontext[sorting=none]\setcounter{papers}{0}\pagebreak[3]
+\printbibliography[category=bib-/Users/mrees2/Dropbox/personal/matt/github/cv/hyndman/Rees.bib-3378569,heading=none]\setcounter{papers}{0}
+
+\nocite{1,
+2}
+
+\hypertarget{in-peer-review}{%
+\subsubsection{In peer-review}\label{in-peer-review}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Davies, H, Tiwi Land Rangers, M Rees, D Stokeld, A Miller, G Gillespie, B Murphy. Variation in feral cat density between two large adjacent islands in Australia's monsoon tropics. \emph{Biological Invasions}.
+\end{enumerate}
+
+\hypertarget{reports}{%
+\subsubsection{Reports}\label{reports}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Rees, M (2020). Monitoring and managing critical weight range mammals in the indigenous protected areas of the world heritage Budj Bim cultural landscape. \emph{A report prepared for the Department of Environment, Land, Water and Planning}.
+\end{enumerate}
+
+\hypertarget{awards}{%
+\section{Awards}\label{awards}}
+
+\begin{tabular}{rll}
+  2017 & Australian government RTP PhD scholarship & \$98K \\ 
+  2017 & DELWP PhD top-up scholarship & \$15K \\ 
+  2016 & CSIRO honours top-up scholarship & \$10K \\ 
+  2015 & University of Wollongong undergraduate research scholarship & \$7.2K \\ 
+  \end{tabular}
+
+\hypertarget{grants}{%
+\section{Grants}\label{grants}}
+
+\begin{tabular}{rll}
+  2020 & Hoslworth research endowment & \$7.5K \\ 
+  2019 & Hoslworth research endowment & \$6.75K \\ 
+  2018 & Conservation Ecology Centre student scholarship & \$5K \\ 
+  2017 & Victorian Environmental Assesment Council Bill Borthwick scholarship & \$2K \\ 
+  2017 & Parks Victoria research partners program & \$20K \\ 
+  2017 & DELWP research grant & \$15K \\ 
+  \end{tabular}
+
+\newpage
+
+\hypertarget{presentations}{%
+\section{Presentations}\label{presentations}}
+
+\begin{itemize}
+\tightlist
+\item
+  International Statistical Ecology Conference (virtual), June 2020. \emph{Using spatial mark-resight and GAMs to infer predator interactions}.
+\item
+  Guest lecture, University of Melbourne, Australian Wildlife Biology subject, May 2020, \emph{Invasive mammals in Australia}.
+\item
+  Ecological Society of Australia, Launceston, November 2019, \emph{Does fox control increase feral cat population density?}
+\item
+  Wimmera Biodiversity Seminar, Rupanyup, September 2019, \emph{Interactions between invasive predators and threatened native mammals in south-west VIC}.
+\item
+  Otway Threatened Species Forum, Geelong, August 2019, \emph{Interactions between invasive predators and threatened native mammals in the Otway Ranges}.
+\item
+  Victorian Biodiversity Conference, Melbourne, February 2019, \emph{Prioritising invasive animal management in the Lake Eyre Basin to benefit both threatened species and agriculture}.
+\item
+  Ecological Society of Australia, Brisbane, November 2018, \emph{Modelling invasive predator density in mesic forests}.
+\item
+  Otway Threatened Species Forum, Geelong, August 2018, \emph{How many feral cats are there in the Western Otway Ranges?}
+\item
+  Mathematics of Biological Systems Symposium, Melbourne, April 2018, \emph{Integrating co-benefits into the cost-effective prioritisation of conservation strategies}.
+\item
+  Victorian Biodiversity Conference, Melbourne, February 2018, \emph{How many feral cats are there in the Western Otway Ranges?}
+\item
+  Environmental Institute of Australia \& New Zealand conference, Brisbane, August 2017, \emph{Building alliances between the agriculture and conservation sectors}.
+\end{itemize}
+
+\hypertarget{media}{%
+\section{Media}\label{media}}
+
+\begin{tabular}{llll}
+  09/12/2019 & Radio interview & ABC Melbourne & Invasive predators interactions \\ 
+  08/08/2019 & Radio interview & 3AW & Invasive predators in south-west VIC \\ 
+  08/08/2019 & Newspaper article (front page) & Geelong Advertiser & Invasive predators in south-west VIC \\ 
+  07/08/2019 & Radio interview & ABC South West Victoria & Invasive predators in south-west VIC \\ 
+  13/03/2019 & Newspaper article & Colac Herald & Feral cat density in the Otway Ranges \\ 
+  11/03/2019 & Radio interview & ABC Melbourne & Feral cat density in the Otway Ranges \\ 
+  11/03/2019 & TV interview & ABC news & Feral cat density in the Otway Ranges \\ 
+  10/03/2019 & Online news article & ABC news & Feral cat density in the Otway Ranges \\ 
+  10/03/2019 & Radio interview & ABC Ballarat & Feral cat density in the Otway Ranges \\ 
+  \end{tabular}
+
+\hypertarget{service}{%
+\section{Service}\label{service}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Treasurer}, Biosciences Postgraduate Society (2019-2020).
+\item
+  \textbf{Peer-reviewer}, \emph{Wildlife Research} and \emph{Conservation Biology} journals.
+\item
+  \textbf{Award judging panel member}, Ecological Society of Australia (2020).
+\item
+  \textbf{Social media manager}, QAECO lab.
+\end{itemize}
+
+\hypertarget{referees}{%
+\section{Referees}\label{referees}}
+
+\begin{itemize}
+\tightlist
+\item
+  Dr Bronwyn Hradsky, PhD supervisor, \href{mailto:bronwyn.hradsky@unimelb.edu.au}{\nolinkurl{bronwyn.hradsky@unimelb.edu.au}}
+\item
+  Prof.~Brendan Wintle, PhD supervisor, \href{mailto:b.wintle@unimelb.edu.au}{\nolinkurl{b.wintle@unimelb.edu.au}}
+\item
+  Dr Alan Robley, PhD supervisor, \href{mailto:alan.robley@delwp.vic.gov.au}{\nolinkurl{alan.robley@delwp.vic.gov.au}}
+\item
+  Dr Jack Pascoe, Collaborator, \href{mailto:jack@conservationecologycentre.org}{\nolinkurl{jack@conservationecologycentre.org}}
+\end{itemize}
+
+\end{document}
