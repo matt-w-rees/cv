@@ -1,0 +1,152 @@
+---
+name: Matthew
+surname: Rees
+position: "Applied Ecologist"
+address: "School of Biosciences, University of Melbourne"
+phone: +61 412 560 534
+www: matthewreesearch.com
+email: "matt.wayne.rees@gmail.com"
+twitter: matt_w_rees
+github: matt-w-rees
+linkedin: matthew-w-rees
+date: "`r format(Sys.time(), '%B %Y')`"
+output: vitae::hyndman
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(tidyverse)
+source("functions.R")
+
+```
+
+
+# Profile
+I am a conservation biologist using quantitative methods to tackle real-world management problems. I specialise in modelling population dynamics and species interactions, primarily through the lens of predator ecology and invasive species management. More broadly, I'm interested in transparent science which considers the needs & knowledge of Indigenous people, incorporates uncertainty, multiple data sources and socio-economic constraints to improve decision-making. You can usually find me either in the field or building spatial capture-recapture, occupancy and generalised additive models in R. I am currently finishing up my PhD with the [Quantitative and Applied Ecology group](https://qaeco.com) while tackling the occasional, related contracting job.
+
+
+# Education
+
+```{r education}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where, 
+  "PhD (Conservation Biology)", "2017-present", "University of Melbourne", "Interactions between invasive predators and native prey",
+  "Bachelor of Environmental Science (1st class Honours)", "2013-2016", "Queensland University of Technology", "Prioritising invasive animal management in the Lake Eyre Basin, Australia",
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+
+
+# Professional Experience
+
+```{r employment}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where, 
+  "Ecologist", "2019-2020", "Winda-mara Aboriginal Corporation", "Training Indigenous rangers in fauna monitoring protocols",
+  "Research assistant", "2020-2020", "University of Melbourne", "Designing fox density field surveys",
+  "Demonstrator", "2018-2020", "University of Melbourne", "Conservation Biology, Environmental Risk Assessment subjects",
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+
+
+# Publications
+### Peer-reviewed
+1.  **MW Rees**, J Carwardine, A Reeson and J Firn (2020). Rapidly assessing cobenefits to advance threat‐management alliances. *Conservation Biology*. [https://doi.org/10.1111/cobi.13490](https://doi.org/10.1111/cobi.13490)
+2. **MW Rees**, JH Pascoe, BA Wintle, M Le Pla, EK Birnbaum and BA Hradsky (2019). Unexpectedly high densities of feral cats in a rugged temperate forest. *Biological Conservation*, 239, 108287. [https://doi.org/10.1016/j.biocon.2019.108287](https://doi.org/10.1016/j.biocon.2019.108287)
+
+### In peer-review
+1.  H Davies, Tiwi Land Rangers, **MW Rees**, D Stokeld, A Miller, G Gillespie and B Murphy. Variation in feral cat density between two large adjacent islands in Australia’s monsoon tropics. *Biological Invasions*.
+2. M Le Pla, EK Birnbaum, **MW Rees**, BA Hradsky, AR Weeks, A Van Rooyen and JH Pascoe. Genetic sampling and an activity index indicate contrasting lethal control outcomes. *Journal of Wildlife Management*.
+
+### Reports
+1.  **MW Rees** (2020). Monitoring and managing critical weight range mammals in the indigenous protected areas of the world heritage Budj Bim cultural landscape. *A report prepared for the Victorian Government, Department of Environment, Land, Water and Planning*.
+
+
+
+# Awards
+
+```{r awards, results='asis'}
+awards <- tribble(
+  ~Year, ~Award, ~Amount,
+  2017, "Victorian Government, Department of Land, Environment, Land, Water and Planning, PhD top-up scholarship", "\\$15K",
+  2017, "Australian federal government, RTP PhD scholarship", "\\$98K",
+  2016, "Commonwealth Scientific and Industrial Research Organisation, honours top-up scholarship", "\\$10K",
+  2015, "University of Wollongong, undergraduate research scholarship", "\\$7.2K"
+) %>%
+  baretable()
+```
+
+\newpage
+
+
+# Grants
+
+```{r grants, results='asis'}
+grants <- tribble(
+  ~Year, ~Award, ~Amount,
+  2020, "University of Melbourne, School of Biosciences, Jasper Loftus-Hills award", "\\$2.25K",
+  2020, "University of Melbourne, School of Biosciences, travel grant ", "\\$2K",
+  2020, "Ecological Society of Australia, Hoslworth research endowment", "\\$7.5K",
+  2019, "Ecological Society of Australia, Hoslworth research endowment", "\\$6.75K",
+  2018, "Conservation Ecology Centre student scholarship", "\\$5K",
+  2017, "Victorian Environmental Assesment Council, Bill Borthwick scholarship", "\\$2K",
+  2017, "Victorian Government, Parks Victoria research partners program (co-investigator)", "\\$20K",
+  2017, "Victorian Government, Department of Land, Environment, Land, Water and Planning research grant", "\\$15K",
+) %>%
+  baretable()
+```
+
+
+
+
+# Presentations
+* International Statistical Ecology Conference (virtual), June 2020. *Using spatial mark-resight and GAMs to infer predator interactions*.
+* Guest lecture, University of Melbourne, Australian Wildlife Biology, May 2020, *Invasive mammals in Australia*.
+* Ecological Society of Australia, Launceston, November 2019, *Does fox control increase feral cat population density?*
+* Wimmera Biodiversity Seminar, Rupanyup, September 2019, *Interactions between invasive predators and threatened native mammals in south-west VIC*.
+* Otway Threatened Species Forum, Geelong, August 2019, *Interactions between invasive predators and threatened native mammals in the Otway Ranges*.
+* Victorian Biodiversity Conference, Melbourne, February 2019, *Prioritising invasive animal management in the Lake Eyre Basin to benefit both threatened species and agriculture*.
+* Ecological Society of Australia, Brisbane, November 2018, *Modelling invasive predator density in mesic forests*.
+* Otway Threatened Species Forum, Geelong, August 2018, *How many feral cats are there in the Western Otway Ranges?*
+* Mathematics of Biological Systems Symposium, Melbourne, April 2018, *Integrating co-benefits into the cost-effective prioritisation of conservation strategies*.
+* Victorian Biodiversity Conference, Melbourne, February 2018, *How many feral cats are there in the Western Otway Ranges?*
+* Environmental Institute of Australia & New Zealand conference, Brisbane, August 2017, *Building alliances between the agriculture and conservation sectors*.
+
+
+# Media
+```{r media, results='asis'}
+media <- tribble(
+  ~Date, ~Format, ~Program, ~Topic,
+  "09/12/2019", "Radio interview", "ABC Melbourne", "Invasive predators interactions",
+  "08/08/2019", "Radio interview", "3AW", "Invasive predators in south-west VIC",
+  "08/08/2019", "Newspaper article (front page)", "Geelong Advertiser", "Invasive predators in south-west VIC",
+  "07/08/2019", "Radio interview", "ABC South West Victoria", "Invasive predators in south-west VIC",
+  "13/03/2019", "Newspaper article", "Colac Herald", "Feral cat density in the Otway Ranges",
+  "11/03/2019", "Radio interview", "ABC Melbourne", "Feral cat density in the Otway Ranges",
+  "11/03/2019", "Live TV interview", "ABC news", "Feral cat density in the Otway Ranges",
+  "10/03/2019", "Online news article", "ABC news", "Feral cat density in the Otway Ranges",
+  "10/03/2019", "Radio interview", "ABC Ballarat", "Feral cat density in the Otway Ranges",
+) %>%
+  baretable()
+```
+
+
+# Service
+* **Treasurer**, Biosciences Postgraduate Society (2019-2020).
+* **Peer-reviewer**, *Wildlife Research* and *Conservation Biology* journals.
+* **Award judging panel member**, Ecological Society of Australia (2020).
+* **Social media manager**, QAECO lab twitter account (2019-present).
+
+
+# Referees
+* Prof. Brendan Wintle, PhD supervisor, b.wintle@unimelb.edu.au
+* Dr Bronwyn Hradsky, PhD supervisor, bronwyn.hradsky@unimelb.edu.au
+* Dr Alan Robley, PhD supervisor, alan.robley@delwp.vic.gov.au
+* Dr Jack Pascoe, Collaborator, jack@conservationecologycentre.org
+
