@@ -23,7 +23,7 @@ source("functions.R")
 
 
 # Profile
-I am a conservation biologist using quantitative methods to tackle real-world management problems. I specialise in modelling population dynamics and species interactions, primarily through the lens of predator ecology and invasive species management. More broadly, I'm interested in transparent science which considers the needs & knowledge of Indigenous people, incorporates uncertainty, multiple data sources and socio-economic constraints to improve decision-making. You can usually find me either in the field or building spatial capture-recapture, occupancy and generalised additive models in R. I am currently finishing up my PhD with the [Quantitative and Applied Ecology group](https://qaeco.com) while tackling the occasional, related contracting job.
+I use quantitative methods to improve conservation monitoring, management and decision-making. I specialise in modelling population dynamics and species interactions, tending to focus on predator ecology and invasive species management. My computational toolkit is largely made up of GIS, structured decision-making tools, spatial capture-recapture methods, occupancy models, generalised additive models and integrated population models. I'm also well-versed in field ecology which motivates me to consider what is achievable on-the-ground and fits within socio-economic constraints. More broadly, I'm passionate about transparent, open science which considers the needs and knowledge of Indigenous people. I am currently finishing up my PhD with the [Quantitative and Applied Ecology group](https://qaeco.com) (supervised by Brendan Wintle, Bronwyn Hradsky and Alan Robley) while tackling the occasional, related contracting job.
 
 
 # Education
@@ -124,6 +124,7 @@ grants <- tribble(
 media <- tribble(
   ~Date, ~Format, ~Program, ~Topic,
   "09/12/2019", "Radio interview", "ABC Melbourne", "Invasive predators interactions",
+  "20/09/2019", "Television segment feature", "TF1 French National News", "Invasive animals in Australia",
   "08/08/2019", "Radio interview", "3AW", "Invasive predators in south-west VIC",
   "08/08/2019", "Newspaper article (front page)", "Geelong Advertiser", "Invasive predators in south-west VIC",
   "07/08/2019", "Radio interview", "ABC South West Victoria", "Invasive predators in south-west VIC",
@@ -139,7 +140,7 @@ media <- tribble(
 
 # Service
 * **Treasurer**, Biosciences Postgraduate Society (2019-2020).
-* **Peer-reviewer**, *Wildlife Research* and *Conservation Biology* journals.
+* **Peer-reviewer**, *Wildlife Research*, *Conservation Biology* and *Austral Ecology* scientific journals.
 * **Award judging panel member**, Ecological Society of Australia (2020).
 * **Social media manager**, QAECO lab twitter account (2019-present).
 
