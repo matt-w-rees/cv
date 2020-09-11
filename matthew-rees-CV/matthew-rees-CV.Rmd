@@ -23,7 +23,7 @@ source("functions.R")
 
 
 # Profile
-I use quantitative methods to improve conservation monitoring, management and decision-making. I specialise in modelling population dynamics and species interactions, tending to focus on predator ecology and invasive species management. My computational toolkit is largely made up of GIS, structured decision-making tools, spatial capture-recapture methods, occupancy models, generalised additive models and integrated population models. I'm also well-versed in field ecology which motivates me to consider what is achievable on-the-ground and fits within socio-economic constraints. More broadly, I'm passionate about transparent, open science which considers the needs and knowledge of Indigenous people. I am currently finishing up my PhD with the [Quantitative and Applied Ecology group](https://qaeco.com) (supervised by Brendan Wintle, Bronwyn Hradsky and Alan Robley) while tackling the occasional, related contracting job.
+I use quantitative methods to improve conservation monitoring, management and decision-making. I specialise in modelling population dynamics and species interactions, tending to focus on predator ecology and invasive species management. My computational toolkit is largely made up of GIS, structured decision-making frameworks, spatial capture-recapture methods, occupancy models, generalised additive models. I'm well-versed in field ecology which motivates me to consider what is achievable on-the-ground and fits within socio-economic constraints. More broadly, I'm passionate about transparent, open science which considers the needs and knowledge of Indigenous People. I am currently finishing up my PhD with the [Quantitative and Applied Ecology group](https://qaeco.com) (supervised by Brendan Wintle, Bronwyn Hradsky and Alan Robley) while tackling the occasional, related contracting job.
 
 
 # Education
@@ -46,7 +46,7 @@ tribble(
 library(tibble)
 tribble(
   ~ Degree, ~ Year, ~ Institution, ~ Where, 
-  "Ecologist", "2019-2020", "Winda-mara Aboriginal Corporation", "Training Indigenous rangers in fauna monitoring protocols",
+  "Ecologist (private contractor)", "2019-2020", "Winda-mara Aboriginal Corporation, Treetec", "Training Indigenous rangers in fauna monitoring protocols and grant writing",
   "Research assistant", "2020-2020", "University of Melbourne", "Designing fox density field surveys",
   "Demonstrator", "2018-2020", "University of Melbourne", "Conservation Biology, Environmental Risk Assessment subjects",
 ) %>% 
@@ -139,9 +139,9 @@ media <- tribble(
 
 
 # Service
-* **Treasurer**, Biosciences Postgraduate Society (2019-2020).
-* **Peer-reviewer**, *Wildlife Research*, *Conservation Biology* and *Austral Ecology* scientific journals.
 * **Award judging panel member**, Ecological Society of Australia (2020).
+* **Treasurer**, Biosciences Postgraduate Society (2019-2020).
+* **Peer-reviewer**, *Wildlife Research*, *Conservation Biology* and *Austral Ecology* scientific journals (2019-present).
 * **Social media manager**, QAECO lab twitter account (2019-present).
 
 
