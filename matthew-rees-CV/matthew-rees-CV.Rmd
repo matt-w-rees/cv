@@ -14,16 +14,19 @@ output: vitae::hyndman
 ---
 
 ```{r setup, include=FALSE}
+
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+
 library(vitae)
 library(tidyverse)
+
 source("functions.R")
 
 ```
 
 
 # Profile
-I use quantitative methods to improve conservation monitoring, management and decision-making. I specialise in modelling population dynamics and species interactions, tending to focus on predator ecology and invasive species management. My computational toolkit is largely made up of GIS, structured decision-making frameworks, spatial capture-recapture methods, occupancy models, generalised additive models. I'm well-versed in field ecology which motivates me to consider what is achievable on-the-ground and fits within socio-economic constraints. More broadly, I'm passionate about transparent, open science which considers the needs and knowledge of Indigenous People. I am currently finishing up my PhD with the [Quantitative and Applied Ecology group](https://qaeco.com) (supervised by Brendan Wintle, Bronwyn Hradsky and Alan Robley) while tackling the occasional, related contracting job.
+I use quantitative methods to improve conservation monitoring, management and decision-making. I specialise in modelling population dynamics and species interactions, focusing on predator ecology and invasive species management. My computational toolkit is largely made up of GIS, structured decision-making tools, spatial capture-recapture, occupancy models and generalised additive models. I'm well-versed in field ecology which motivates me to consider what is feasible on-ground and fits within socio-economic constraints. More broadly, I'm passionate about transparent science which also considers the needs and knowledge of First Nations People. I am currently finishing up my PhD with the [*Quantitative and Applied Ecology group*](https://qaeco.com){target="_blank"} (supervised by Brendan Wintle, Bronwyn Hradksy & Alan Robley) while tackling the occasional, related contracting job.
 
 
 # Education
@@ -32,7 +35,7 @@ I use quantitative methods to improve conservation monitoring, management and de
 library(tibble)
 tribble(
   ~ Degree, ~ Year, ~ Institution, ~ Where, 
-  "PhD (Conservation Biology)", "2017-present", "University of Melbourne", "Interactions between invasive predators and native prey",
+  "PhD (Conservation Biology)", "2017-present", "University of Melbourne", "Interactions between invasive predators and native prey", 
   "Bachelor of Environmental Science (1st class Honours)", "2013-2016", "Queensland University of Technology", "Prioritising invasive animal management in the Lake Eyre Basin, Australia",
 ) %>% 
   detailed_entries(Degree, Year, Institution, Where)
@@ -61,7 +64,7 @@ tribble(
 2. **MW Rees**, JH Pascoe, BA Wintle, M Le Pla, EK Birnbaum and BA Hradsky (2019). Unexpectedly high densities of feral cats in a rugged temperate forest. *Biological Conservation*, 239, 108287. [https://doi.org/10.1016/j.biocon.2019.108287](https://doi.org/10.1016/j.biocon.2019.108287)
 
 ### In peer-review
-1.  H Davies, Tiwi Land Rangers, **MW Rees**, D Stokeld, A Miller, G Gillespie and B Murphy. Variation in feral cat density between two large adjacent islands in Australia’s monsoon tropics. *Biological Invasions*.
+1.  H Davies, Tiwi Land Rangers, **MW Rees**, D Stokeld, A Miller, G Gillespie and B Murphy. Variation in feral cat density between two large adjacent islands in Australia’s monsoon tropics. *Austral Ecology*.
 2. M Le Pla, EK Birnbaum, **MW Rees**, BA Hradsky, AR Weeks, A Van Rooyen and JH Pascoe. Genetic sampling and an activity index indicate contrasting lethal control outcomes. *Journal of Wildlife Management*.
 
 ### Reports
