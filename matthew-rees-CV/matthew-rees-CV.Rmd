@@ -1,7 +1,7 @@
 ---
 name: Matthew
 surname: Rees
-position: "Applied Ecologist"
+position: "Quantitative Ecologist"
 address: "School of Biosciences, University of Melbourne"
 phone: +61 412 560 534
 www: matthewreesearch.com
@@ -27,7 +27,8 @@ source("functions.R")
 
 
 # Profile
-I use quantitative methods to improve conservation monitoring, management and decision-making. I specialise in modelling population dynamics and species interactions, tending to focus on invasive species. I have extensive experience in using hierarchical models (namely occupancy and spatial capture-recapture methods), generalised linear and non-linear models and structured decision-making methods. I have extensive fieldwork experience, leading large teams of works in remote and rugged conditions, which motivates me to consider feasibility as well as socio-economic constraints. I'm particularly passionate about applying newly developed statistical methods to real-world datasets, as well as conducting transparent and collaborative science. I am currently finishing up my PhD with the [*Quantitative and Applied Ecology group*](https://qaeco.com){target="_blank"} while tackling the occasional, related contracting job.
+I use quantitative methods to improve the monitoring and management of threatened and invasive species. My expertise lies in predator ecology, as well as modelling population dynamics and animal interactions using hierarchical models (namely spatial capture-recapture, occupancy-detection and generalised additive models). I apply advanced statistical models to real-world datasets, at spatial scales relevant to managers. Extensive fieldwork experience, particularly with camera-traps, motivates me to properly account for landscape context, feasibility and socio-economic constraints into each of my projects. Currently, I am nearing completion of a PhD with the [*Quantitative and Applied Ecology group*](https://qaeco.com){target="_blank"}.
+
 
 $~$
 
@@ -35,8 +36,8 @@ $~$
 ```{r education}
 tribble(
   ~ Degree, ~ Year, ~ Institution, ~ Where, 
-  "PhD (Conservation Biology)", "2017-present", "University of Melbourne", "Interactions between invasive predators and native prey", 
-  "Bachelor of Environmental Science (1st class Honours)", "2013-2016", "Queensland University of Technology", "Prioritising invasive animal management in the Lake Eyre Basin, Australia"
+  "PhD (Conservation Biology)", "2017-present", "University of Melbourne", "Interactions between invasive predators and native prey.", 
+  "Bachelor of Environmental Science (1st class Honours)", "2013-2016", "Queensland University of Technology", "Prioritising invasive animal management for conservation and agriculture."
 ) %>% 
   detailed_entries(Degree, Year, Institution, Where)
 ```
@@ -47,9 +48,9 @@ tribble(
 
 tribble(
   ~ Degree, ~ Year, ~ Institution, ~ Where, 
-  "Ecologist (private contractor)", "2019-2020", "Winda-mara Aboriginal Corporation, Treetec", "Training Indigenous rangers in fauna monitoring protocols and grant writing",
-  "Research assistant", "2020-2020", "University of Melbourne", "Designing fox density field surveys",
-  "Demonstrator", "2018-2020", "University of Melbourne", "Conservation Biology, Environmental Risk Assessment subjects"
+  "Ecologist (private contractor)", "2019-2020", "Winda-mara Aboriginal Corporation", "Training Indigenous rangers in fauna monitoring protocols.",
+  "Research assistant", "2020-2020", "University of Melbourne, Treetec", "Designing predator field surveys and grant writing.",
+  "Demonstrator", "2018-2020", "University of Melbourne", "Conservation Biology, Environmental Risk Assessment subjects."
 ) %>% 
   detailed_entries(Degree, Year, Institution, Where)
 
@@ -57,28 +58,23 @@ tribble(
 
 
 # Publications
+
+### Peer-reviewed
+1. A Stobo-Wilson... **MW Rees**...(in press). Reptiles as food: predation of Australian reptiles by introduced red foxes compounds and complements predation by cats. *Wildlife Research*.
+2.  H Davies, Tiwi Land Rangers, **MW Rees**, D Stokeld, A Miller, G Gillespie and B Murphy (in press). Variation in feral cat density between two large adjacent islands in Australia’s monsoon tropics. *Pacific Conservation Biology*.
+3.  **MW Rees**, J Carwardine, A Reeson and J Firn (2020). Rapidly assessing cobenefits to advance threat‐management alliances. *Conservation Biology*. [https://doi.org/10.1111/cobi.13490](https://doi.org/10.1111/cobi.13490)
+4. **MW Rees**, JH Pascoe, BA Wintle, M Le Pla, EK Birnbaum and BA Hradsky (2019). Unexpectedly high densities of feral cats in a rugged temperate forest. *Biological Conservation*, 239, 108287. [https://doi.org/10.1016/j.biocon.2019.108287](https://doi.org/10.1016/j.biocon.2019.108287)
+
+### In peer-review
+1. M Le Pla, EK Birnbaum, **MW Rees**, BA Hradsky, AR Weeks, A Van Rooyen and JH Pascoe. Genetic sampling and an activity index indicate contrasting lethal control outcomes. 
+2. A Stobo-Wilson... **MW Rees**... Sharing meals: predation on Australian mammals by the introduced European red fox compounds and complements predation by feral cats.
+4. A Stobo-Wilson... **MW Rees**... Compounding and complementary carnivores: Australian bird species eaten by the introduced European red fox Vulpes vulpes and domestic cat Felis catus.
+5. A Stobo-Wilson... **MW Rees**... Counting the bodies: the numbers of, and spatial variation in, Australian reptiles, birds and mammals killed by two introduced predators.
+
 ### Reports
 1.  **MW Rees** (2020). Monitoring and managing critical weight range mammals in the indigenous protected areas of the world heritage Budj Bim cultural landscape. *A report prepared for the Victorian Government, Department of Environment, Land, Water and Planning*.
 
-### Peer-reviewed
-1.  **MW Rees**, J Carwardine, A Reeson and J Firn (2020). Rapidly assessing cobenefits to advance threat‐management alliances. *Conservation Biology*. [https://doi.org/10.1111/cobi.13490](https://doi.org/10.1111/cobi.13490)
-2. **MW Rees**, JH Pascoe, BA Wintle, M Le Pla, EK Birnbaum and BA Hradsky (2019). Unexpectedly high densities of feral cats in a rugged temperate forest. *Biological Conservation*, 239, 108287. [https://doi.org/10.1016/j.biocon.2019.108287](https://doi.org/10.1016/j.biocon.2019.108287)
-
-### In peer-review
-1.  H Davies, Tiwi Land Rangers, **MW Rees**, D Stokeld, A Miller, G Gillespie and B Murphy. Variation in feral cat density between two large adjacent islands in Australia’s monsoon tropics. 
-2. M Le Pla, EK Birnbaum, **MW Rees**, BA Hradsky, AR Weeks, A Van Rooyen and JH Pascoe. Genetic sampling and an activity index indicate contrasting lethal control outcomes. 
-3. A Stobo-Wilson... **MW Rees**... Sharing meals: predation on Australian mammals by the introduced European red fox compounds and complements predation by feral cats.
-4. A Stobo-Wilson... **MW Rees**... Reptiles as food: predation of Australian reptiles by introduced red foxes compounds and complements predation by cats.
-5. A Stobo-Wilson... **MW Rees**... Compounding and complementary carnivores: Australian bird species eaten by the introduced European red fox Vulpes vulpes and domestic cat Felis catus
-6. A Stobo-Wilson... **MW Rees**... Counting the bodies: the numbers of, and spatial variation in, Australian reptiles, birds and mammals killed by two introduced predators.
-
-
-### In preparation for peer-review
-1.  **MW Rees**, JH Pascoe, BA Wintle, A Robley, M Le Pla, EK Birnbaum and BA Hradsky. Invasive mesopredator release: foxes can limit feral cat density.
-2.  **MW Rees**, A Robley, BA Hradsky, BA Wintle, JH Pascoe and N Golding. Modelling spatio-temporal species interactions using generalised additive models. 
-3.  **MW Rees**, BA Hradsky, BA Wintle, JH Pascoe & A Robley. A dynamic multi-species occupancy model of invasive predators and native prey.
-4.  J Bourne, A Basu & **MW Rees**. Automating camera-trap study workflows with performance machine learning models: how does accuracy impact ecological inference?
-
+$~$
 
 # Grants and awards
 ```{r awards, results='asis'}
@@ -101,7 +97,11 @@ awards <- tribble(
   baretable()
 ```
 
+
+$~$
+
 # Presentations
+* Evans River K-12 Community School, March 2021. *My experience in conservation science*.
 * Australian Wildlife Management Society (virtual), December 2020. *Drivers of feral cat density and spatio-temporal behaviour*.
 * Ecological Society of Australia (virtual), December 2020. *Drivers of feral cat density and spatio-temporal behaviour*.
 * Australian Mammal Society (virtual), November 2020. *Drivers of feral cat density and spatio-temporal behaviour*.
@@ -116,6 +116,7 @@ awards <- tribble(
 * Mathematics of Biological Systems Symposium, Melbourne, April 2018, *Integrating co-benefits into the cost-effective prioritisation of conservation strategies*.
 * Victorian Biodiversity Conference, Melbourne, February 2018, *How many cats are in the Otways?*
 * Environmental Institute of Australia & New Zealand conference, Brisbane, August 2017, *Building alliances between the agriculture and conservation sectors*.
+
 
 
 # Media
@@ -139,6 +140,56 @@ media <- tribble(
 ```
 
 
+$~$
+
+# Service
+
++ Peer-reviewer (*Conservation Biology*, *Wildlife Research*, *Austral Ecology*, *Australian Mammalogy*)
++ Treasurer, BioSciences Postgraduate Society (2019-2020)
++ Coding club and social media contributor with QAECO lab group
++ Ecological Society of Australia award judging panel (2020)
 
 
+\newpage
+
+# References
+
+
+**Prof. Brendan Wintle** (PhD supervisor)
+
+Director, NESP Threatened Species Recovery Hub
+
+Melbourne, Victoria
+
++61 425 828 470
+
+b.wintle@unimelb.edu.au
+
+
+$~$
+
+
+**Dr Bronwyn Hradsky** (PhD supervisor)
+
+Research fellow, University of Melbourne, 
+
+Melbourne, Victoria
+
++61 449 922 728
+
+bronwyn.hradsky@unimelb.edu.au
+
+
+$~$
+
+
+**Dr Alan Robley** (PhD supervisor)
+
+Senior Research Scientist, Arthur Rylah Research Institute
+
+Melbourne, Victoria
+
++61 419 509 330 
+
+Alan.Robley@delwp.vic.gov.au
 
