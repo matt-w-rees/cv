@@ -27,10 +27,8 @@ source("functions.R")
 
 
 # Profile
-I use quantitative methods to improve the monitoring and management of threatened and invasive species. My expertise lies in predator ecology, as well as modelling population dynamics and animal interactions using hierarchical models (namely spatial capture-recapture, occupancy-detection and generalised additive models). I apply advanced statistical models to real-world datasets, at spatial scales relevant to managers. Extensive fieldwork experience, particularly with camera-traps, motivates me to properly account for landscape context, feasibility and socio-economic constraints into each of my projects. Currently, I am nearing completion of a PhD with the [*Quantitative and Applied Ecology group*](https://qaeco.com){target="_blank"}.
+I use quantitative methods to improve the monitoring and management of threatened and invasive species. My expertise lies in predator ecology, as well as modelling population dynamics and animal interactions using hierarchical models (namely spatial capture-recapture, occupancy-detection and generalised additive models). I apply advanced statistical models to real-world datasets, at spatial scales relevant to managers. Extensive fieldwork experience, particularly using camera-traps, motivates me to properly account for landscape context, feasibility as well as socio-economic constraints. Currently, I am nearing completion of a PhD with the [*Quantitative and Applied Ecology group*](https://qaeco.com){target="_blank"}. My PhD thesis details the interactions between invasive red foxes and feral cats in mesic environments, set against a backdrop of intensive fox control. 
 
-
-$~$
 
 # Education
 ```{r education}
@@ -48,9 +46,9 @@ tribble(
 
 tribble(
   ~ Degree, ~ Year, ~ Institution, ~ Where, 
-  "Ecologist (private contractor)", "2019-2020", "Winda-mara Aboriginal Corporation", "Training Indigenous rangers in fauna monitoring protocols.",
+  "Ecologist (private contractor)", "2019-2020", "Winda-mara Aboriginal Corporation", "Training Indigenous Rangers in wildlife survey methods",
   "Research assistant", "2020-2020", "University of Melbourne, Treetec", "Designing predator field surveys and grant writing.",
-  "Demonstrator", "2018-2020", "University of Melbourne", "Conservation Biology, Environmental Risk Assessment subjects."
+  "Teaching assistant", "2018-2020", "University of Melbourne", "Conservation Biology, Australian Wildlife Biology and Environmental Risk Assessment subjects."
 ) %>% 
   detailed_entries(Degree, Year, Institution, Where)
 
