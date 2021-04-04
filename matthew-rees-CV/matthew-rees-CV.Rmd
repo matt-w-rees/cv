@@ -59,7 +59,7 @@ tribble(
 
 ### Peer-reviewed
 1. A Stobo-Wilson... **MW Rees**...(in press). Reptiles as food: predation of Australian reptiles by introduced red foxes compounds and complements predation by cats. *Wildlife Research*.
-2.  H Davies, Tiwi Land Rangers, **MW Rees**, D Stokeld, A Miller, G Gillespie and B Murphy (in press). Variation in feral cat density between two large adjacent islands in Australia’s monsoon tropics. *Pacific Conservation Biology*.
+2.  H Davies, Tiwi Land Rangers, **MW Rees**, D Stokeld, A Miller, G Gillespie and B Murphy (2021). Variation in feral cat density between two large adjacent islands in Australia’s monsoon tropics. *Pacific Conservation Biology*. [https://doi.org/10.1071/PC20088](https://doi.org/10.1071/PC20088)
 3.  **MW Rees**, J Carwardine, A Reeson and J Firn (2020). Rapidly assessing cobenefits to advance threat‐management alliances. *Conservation Biology*. [https://doi.org/10.1111/cobi.13490](https://doi.org/10.1111/cobi.13490)
 4. **MW Rees**, JH Pascoe, BA Wintle, M Le Pla, EK Birnbaum and BA Hradsky (2019). Unexpectedly high densities of feral cats in a rugged temperate forest. *Biological Conservation*, 239, 108287. [https://doi.org/10.1016/j.biocon.2019.108287](https://doi.org/10.1016/j.biocon.2019.108287)
 
@@ -145,7 +145,6 @@ $~$
 + Peer-reviewer (*Conservation Biology*, *Wildlife Research*, *Austral Ecology*, *Australian Mammalogy*)
 + Treasurer, BioSciences Postgraduate Society (2019-2020)
 + Coding club and social media contributor with QAECO lab group
-+ Ecological Society of Australia award judging panel (2020)
 
 
 \newpage
