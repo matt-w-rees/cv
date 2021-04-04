@@ -27,14 +27,14 @@ source("functions.R")
 
 
 # Profile
-I use quantitative methods to improve the monitoring and management of threatened and invasive species. My expertise lies in predator ecology, as well as modelling population dynamics and animal interactions using hierarchical models (namely spatial capture-recapture, occupancy-detection and generalised additive models). I apply advanced statistical models to real-world datasets, at spatial scales relevant to managers. My extensive fieldwork experience motivates me to explicitly account for landscape context, feasibility and socio-economic constraints in my research. Currently, I am nearing completion of a PhD with the [*Quantitative and Applied Ecology group*](https://qaeco.com){target="_blank"}. My PhD thesis details the interactions between invasive red foxes and feral cats in mesic environments, set against a backdrop of intensive fox control. 
+I use quantitative methods to improve the monitoring and management of threatened and invasive species. My expertise lies in predator ecology, as well as modelling population dynamics and animal interactions using hierarchical models (namely spatial capture-recapture, occupancy-detection and generalised additive models). I apply advanced statistical models to real-world datasets, at spatial scales relevant to managers. My extensive fieldwork experience motivates me to explicitly account for landscape context, feasibility and socio-economic constraints in my research. Currently, I am nearing completion of a PhD with the [*Quantitative and Applied Ecology group*](https://qaeco.com){target="_blank"}. My PhD thesis details the interactions between invasive red foxes and feral cats in mesic environments, set against a backdrop of intensive fox control and prescribed burns. 
 
 
 # Education
 ```{r education}
 tribble(
   ~ Degree, ~ Year, ~ Institution, ~ Where, 
-  "PhD (Conservation Biology)", "2017-present", "University of Melbourne", "Interactions between invasive predators and native prey.", 
+  "PhD (Conservation Biology)", "2017-present", "University of Melbourne", "Interactions between invasive predators, fire and native prey.", 
   "Bachelor of Environmental Science (1st class Honours)", "2013-2016", "Queensland University of Technology", "Prioritising invasive animal management for conservation and agriculture."
 ) %>% 
   detailed_entries(Degree, Year, Institution, Where)
