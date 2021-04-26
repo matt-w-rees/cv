@@ -98,6 +98,9 @@ awards <- tribble(
 
 $~$
 
+$~$
+
+
 # Presentations
 * Evans River K-12 Community School, March 2021. *My experience in conservation science*.
 * Australian Wildlife Management Society (virtual), December 2020. *Drivers of feral cat density and spatio-temporal behaviour*.
@@ -116,12 +119,15 @@ $~$
 * Environmental Institute of Australia & New Zealand conference, Brisbane, August 2017, *Building alliances between the agriculture and conservation sectors*.
 
 
+$~$
+
 
 # Media
 ```{r media, results='asis'}
 
 media <- tribble(
   ~Date, ~Format, ~Program, ~Topic,
+  "08/4/2021", "Online article", "Pursuit; University of Melbourne", "Using artifical intelligence to help control feral cats",
   "09/12/2019", "Radio interview", "ABC Melbourne", "Invasive predators interactions",
   "20/09/2019", "Television segment feature", "TF1 French National News", "Invasive animals in Australia",
   "08/08/2019", "Radio interview", "3AW", "Invasive predators in south-west VIC",
@@ -140,11 +146,6 @@ media <- tribble(
 
 $~$
 
-# Service
-
-+ Peer-reviewer (*Conservation Biology*, *Wildlife Research*, *Austral Ecology*, *Australian Mammalogy*)
-+ Treasurer, BioSciences Postgraduate Society (2019-2020)
-+ Coding club and social media contributor with QAECO lab group
 
 
 \newpage
